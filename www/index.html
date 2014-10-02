@@ -89,6 +89,7 @@
             window.scrollTo(0, window.document.height);
         };
 
+       cordova.plugins.locationManager.requestWhenInUseAuthorization();
         var delegate = new cordova.plugins.locationManager.Delegate().implement({
 
             didDetermineStateForRegion: function (pluginResult) {
